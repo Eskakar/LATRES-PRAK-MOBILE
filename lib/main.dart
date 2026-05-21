@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Harry Potter App',
       initialRoute:
-          authController.isLoggedIn() ? Routes.characters : Routes.login,
+          authController.isLoggedIn() ? Routes.mainNavigation : Routes.login,
       getPages: AppRoutes.routes,
     );
   }

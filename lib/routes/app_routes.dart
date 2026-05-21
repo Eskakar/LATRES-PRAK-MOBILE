@@ -5,6 +5,7 @@ import '../views/detail_character_view.dart';
 import '../views/favorite_spells_view.dart';
 import '../views/login_view.dart';
 import '../views/spells_view.dart';
+import '../views/main_navigation_view.dart';
 
 class Routes {
   static const login = '/login';
@@ -12,6 +13,7 @@ class Routes {
   static const detailCharacter = '/detail-character';
   static const spells = '/spells';
   static const favoriteSpells = '/favorite-spells';
+  static const mainNavigation = '/main-navigation';
 }
 
 class AppRoutes {
@@ -35,6 +37,10 @@ class AppRoutes {
     GetPage(
       name: Routes.favoriteSpells,
       page: () => FavoriteSpellsView(),
+    ),
+    GetPage(
+      name: Routes.mainNavigation,
+      page: () => MainNavigationView(),
     ),
   ];
 }

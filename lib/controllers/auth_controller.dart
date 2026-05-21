@@ -10,7 +10,7 @@ class AuthController extends GetxController {
       await prefs.setBool('isLogin', true);
 
       Get.snackbar('Berhasil', 'Login berhasil');
-      Get.offAllNamed(Routes.characters);
+      Get.offAllNamed(Routes.mainNavigation);
     } else {
       Get.snackbar('Gagal', 'Username atau password salah');
     }
