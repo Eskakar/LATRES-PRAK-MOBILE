@@ -13,3 +13,13 @@ dengan :
 
 2. Internet  
     <uses-permission android:name="android.permission.INTERNET"/>
+
+3. tambahkan di android/app/build.gradle.kts
+compileOptions {
+    isCoreLibraryDesugaringEnabled = true
+}
+4. tambahkan di android/app/build.gradle.kts
+dibawah Android
+dependencies{
+    coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:2.1.4")
+}

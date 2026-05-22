@@ -5,11 +5,8 @@ import '../controllers/auth_controller.dart';
 import '../controllers/spell_controller.dart';
 import '../routes/app_routes.dart';
 
-class SpellsView extends StatelessWidget {
+class SpellsView extends GetView<SpellController> {
   SpellsView({super.key});
-
-  final SpellController controller =
-      Get.put(SpellController());
 
   final AuthController authController = Get.find();
 

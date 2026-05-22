@@ -1,4 +1,5 @@
 import 'package:get/get.dart';
+import 'package:herry_app/bindings/spell_binding.dart';
 
 import '../views/character_view.dart';
 import '../views/detail_character_view.dart';
@@ -6,6 +7,7 @@ import '../views/favorite_spells_view.dart';
 import '../views/login_view.dart';
 import '../views/spells_view.dart';
 import '../views/main_navigation_view.dart';
+import '../bindings/character_binding.dart';
 
 class Routes {
   static const login = '/login';
@@ -25,6 +27,7 @@ class AppRoutes {
     GetPage(
       name: Routes.characters,
       page: () => CharacterView(),
+      binding: CharacterBinding(),
     ),
     GetPage(
       name: Routes.detailCharacter,
@@ -33,6 +36,7 @@ class AppRoutes {
     GetPage(
       name: Routes.spells,
       page: () => SpellsView(),
+      binding: SpellBinding(),
     ),
     GetPage(
       name: Routes.favoriteSpells,

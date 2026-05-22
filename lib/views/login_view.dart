@@ -9,6 +9,7 @@ class LoginView extends StatelessWidget {
   final usernameController = TextEditingController();
   final passwordController = TextEditingController();
 
+  //controller sudah ada di main.dart
   final AuthController authController = Get.find();
 
   @override

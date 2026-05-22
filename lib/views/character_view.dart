@@ -5,11 +5,8 @@ import '../controllers/auth_controller.dart';
 import '../controllers/character_controller.dart';
 import '../routes/app_routes.dart';
 
-class CharacterView extends StatelessWidget {
+class CharacterView extends GetView<CharacterController> {
   CharacterView({super.key});
-
-  final CharacterController controller =
-      Get.put(CharacterController());
 
   final AuthController authController = Get.find();
 
